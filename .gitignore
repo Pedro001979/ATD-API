@@ -1,0 +1,22 @@
+# Dependências (Nunca suba a pasta node_modules)
+node_modules/
+
+# Logs do NPM
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Arquivos de Sistema (Windows/Mac)
+.DS_Store
+Thumbs.db
+
+# Configurações do VS Code
+.vscode/
+
+# Relatórios de Teste e Cobertura (se você usar algum no futuro)
+coverage/
+.nyc_output/
+mochawesome-report/
+
+# Variáveis de Ambiente (Segurança!)
+.env

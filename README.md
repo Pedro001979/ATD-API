@@ -4,30 +4,30 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-100%25-yellow.svg)
 ![Status](https://img.shields.io/badge/status-Active-brightgreen.svg)
 
-## 📋 Descrição
+## Descrição
 
-Este projeto contém testes automatizados para APIs GraphQL utilizando o framework **PactumJS**. O objetivo é demonstrar como realizar testes eficientes e confiáveis em endpoints GraphQL, incluindo validação de esquemas, respostas e comportamentos. O foco está em **consultas (Queries)** e **autenticação (Mutations)**.
+Este projeto contém testes automatizados para APIs GraphQL utilizando o framework **PactumJS**. O objetivo é demonstrar como realizar testes eficientes e confiáveis em endpoints GraphQL, incluindo boas práticas de autenticação e validação de respostas.
 
-## 🎯 Objetivos
+## Objetivos
 
-- ✅ Testar endpoints GraphQL com PactumJS
-- ✅ Validar respostas GraphQL utilizando matchers
-- ✅ Implementar testes de integração com autenticação
-- ✅ Demonstrar boas práticas em testes de API GraphQL
+- Testar endpoints GraphQL com PactumJS
+- Validar respostas GraphQL utilizando matchers
+- Implementar testes de integração com autenticação
+- Demonstrar boas práticas em testes de API GraphQL
 
-## 🧪 O que foi testado?
+## O que foi testado?
 
 - [x] **Autenticação (Mutation):** Realiza o login de um usuário administrativo, valida o sucesso da operação e armazena o token JWT.
 - [x] **Listagem de Usuários (Query):** Utiliza o token armazenado para listar os usuários da plataforma, validando o status code e a estrutura dos dados retornados.
 
-## 📦 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - **PactumJS** (v3.9.1) - Framework principal para testes de API
 - **Mocha** (v11.7.5) - Test runner
 - **pactum-matchers** (v1.2.0) - Validadores customizados para validações dinâmicas (JsonMatch)
 - **Node.js** - Runtime JavaScript
 
-## 🚀 Início Rápido
+## Início Rápido
 
 ### Pré-requisitos
 
@@ -60,7 +60,7 @@ npm test -- --reporter spec
 npx mocha ./test/graphql/seu-arquivo.test.js
 ```
 
-## 📁 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 Testes-em-APIs-GraphQL-com-PactumJS/
@@ -73,7 +73,7 @@ Testes-em-APIs-GraphQL-com-PactumJS/
 └── ...
 ```
 
-## 📝 Exemplos de Uso
+## Exemplos de Uso
 
 ### Teste de Autenticação (Mutation)
 
@@ -161,7 +161,7 @@ describe('GraphQL Queries', () => {
 });
 ```
 
-## 🧪 Dependências
+## Dependências
 
 | Pacote | Versão | Propósito |
 |--------|--------|----------|
@@ -169,7 +169,7 @@ describe('GraphQL Queries', () => {
 | pactum-matchers | ^1.2.0 | Validadores customizados e JsonMatch |
 | mocha | ^11.7.5 | Test runner |
 
-## 💡 Dicas Úteis
+## Dicas Úteis
 
 - Use `pactum-matchers` para validações complexas de respostas GraphQL
 - Reutilize tokens de autenticação em múltiplos testes usando `before()` hooks
@@ -177,14 +177,14 @@ describe('GraphQL Queries', () => {
 - Utilize `beforeEach` e `afterEach` para setup/teardown
 - Implemente helpers para queries GraphQL reutilizáveis
 
-## 🔗 Recursos Úteis
+## Recursos Úteis
 
 - [Documentação PactumJS](https://pactumjs.github.io/)
 - [Documentação GraphQL](https://graphql.org/)
 - [Mocha Documentation](https://mochajs.org/)
 - [Pactum Matchers](https://pactumjs.github.io/advanced/matchers.html)
 
-## 🤝 Contribuição
+## Contribuição
 
 Contribuições são bem-vindas! Para contribuir:
 
@@ -194,13 +194,13 @@ Contribuições são bem-vindas! Para contribuir:
 4. Push para a branch (`git push origin feature/MinhaFeature`)
 5. Abra um Pull Request
 
-## 👤 Autor
+## Autor
 
 **Pedro Ricardo**
 
 - GitHub: [@Pedro001979](https://github.com/Pedro001979)
 
-## 📄 Licença
+## Licença
 
 Este projeto está licenciado sob a Licença ISC - veja o arquivo LICENSE para detalhes.
 

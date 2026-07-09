@@ -4,7 +4,11 @@
   "description": "Testes com graphql usando o pactum",
   "main": "index.js",
   "scripts": {
-    "test": "mocha ./test/**/*.test.js"
+    "test": "mocha ./test/**/*.test.js",
+    "start": "npx serverest",
+    "cy:run": "npx cypress run",
+    "cy:run-ci": "start-server-and-test start http://localhost:3000 cy:run",
+    "test:ci": "mocha ./test/**/*.test.js --reporter mochawesome --reporter-options reportDir=mochawesome-report,overwrite=false,html=false,json=true"
   },
   "keywords": [],
   "author": "Pedro Ricardo",
@@ -12,7 +16,11 @@
   "type": "commonjs",
   "devDependencies": {
     "mocha": "^11.7.5",
-    "pactum": "^3.9.1"
+    "mochawesome": "^7.1.4",
+    "mochawesome-merge": "^5.1.1",
+    "mochawesome-report-generator": "^6.3.2",
+    "pactum": "^3.9.1",
+    "start-server-and-test": "^3.0.11"
   },
   "dependencies": {
     "pactum-matchers": "^1.2.0"

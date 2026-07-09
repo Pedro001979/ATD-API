@@ -8,7 +8,7 @@
     "start": "npx serverest",
     "cy:run": "npx cypress run",
     "cy:run-ci": "start-server-and-test start http://localhost:3000 cy:run",
-    "test:ci": "mocha ./test/**/*.test.js --reporter mochawesome --reporter-options reportDir=mochawesome-report,overwrite=false,html=false,json=true"
+    "test:ci": "mocha ./test/**/*.test.js --reporter mochawesome --reporter-options reportDir=mochawesome-report,reportFilename=index,html=true,json=false"
   },
   "keywords": [],
   "author": "Pedro Ricardo",

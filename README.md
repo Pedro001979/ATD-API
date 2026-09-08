@@ -1,64 +1,35 @@
-# API Test Automation — GraphQL + PactumJS
+# Automação de Testes de API — GraphQL + PactumJS
 
-![JavaScript](https://img.shields.io/badge/JavaScript-100%25-F7DF1E?logo=javascript&logoColor=black)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6%2B-F7DF1E?logo=javascript&logoColor=black)
 ![PactumJS](https://img.shields.io/badge/PactumJS-API%20Testing-6C63FF)
 ![Mocha](https://img.shields.io/badge/Mocha-Test%20Runner-8D6748?logo=mocha&logoColor=white)
-![License](https://img.shields.io/badge/license-ISC-blue)
 
-> API automation project demonstrating functional and integration testing of GraphQL endpoints with authentication and response validation.
+## Sobre o projeto
 
-## Overview
+Suíte de **automação de testes de API** criada para validar operações GraphQL, autenticação e respostas de serviços.
 
-This project uses **PactumJS** and **Mocha** to automate GraphQL API scenarios. The suite focuses on authentication flows, JWT handling, query validation and structured response assertions.
+O foco está na validação funcional da API e na criação de cenários independentes, legíveis e reutilizáveis.
 
-## Scenarios
+## Cenários validados
 
-- **Authentication mutation** — validates successful administrative login and JWT token retrieval.
-- **Authenticated query** — uses the token to access protected user data.
-- **Response validation** — checks status codes, response structure and expected fields.
-- **Reusable setup** — demonstrates authentication through Mocha hooks for dependent scenarios.
+- Autenticação e obtenção de token JWT
+- Execução de operações GraphQL autenticadas
+- Validação de status e estrutura das respostas
+- Verificação de campos esperados
+- Reutilização de autenticação através de hooks
+- Organização de cenários para manutenção da suíte
 
-## Tech Stack
+## Stack
 
-| Technology | Purpose |
+| Tecnologia | Utilização |
 |---|---|
-| PactumJS | API automation and assertions |
-| Mocha | Test runner |
-| pactum-matchers | Dynamic response validation |
-| Node.js | Runtime |
-| GraphQL | API technology under test |
+| PactumJS | Automação e asserções de API |
+| GraphQL | Tecnologia da API sob teste |
+| Mocha | Execução dos testes |
+| pactum-matchers | Validações dinâmicas |
+| Node.js | Ambiente de execução |
 
-## Getting Started
-
-### Requirements
-
-- Node.js 14+ (or a current LTS version)
-- npm or yarn
-- Access to the GraphQL API environment used by the tests
-
-### Installation
-
-```bash
-git clone https://github.com/Pedro001979/ATD-API.git
-cd ATD-API
-npm install
-```
-
-### Run tests
-
-```bash
-npm test
-```
-
-For verbose Mocha output:
-
-```bash
-npm test -- --reporter spec
-```
-
-## Example
-
-A typical PactumJS scenario validates an authenticated GraphQL operation by combining the request body, authorization header and expected response structure:
+## Exemplo de validação
 
 ```javascript
 await pactum
@@ -72,24 +43,31 @@ await pactum
   .expectBodyContains('usuarios');
 ```
 
-## QA Engineering Focus
+## Execução
 
-This repository highlights skills in:
+```bash
+git clone https://github.com/Pedro001979/ATD-API.git
+cd ATD-API
+npm install
+npm test
+```
 
-- API functional testing
-- GraphQL testing
-- Authentication and JWT flows
-- Contract/response validation
-- Test organization and reusable setup
-- JavaScript-based automation
+## Competências demonstradas
 
-## Author
+- Testes funcionais de API
+- Testes GraphQL
+- Autenticação e JWT
+- Validação de contratos e respostas
+- Automação com JavaScript
+- Organização e reutilização de cenários
+
+## Autor
 
 **Pedro Ricardo**  
-QA Automation | JavaScript | API Testing | Cypress | Appium
+QA Automation | API Testing | JavaScript | Cypress | Appium
 
-[![GitHub](https://img.shields.io/badge/GitHub-Pedro001979-181717?logo=github)](https://github.com/Pedro001979)
+[GitHub](https://github.com/Pedro001979) · [LinkedIn](https://www.linkedin.com/in/pedro-ricardo-6a3b76236/)
 
-## License
+---
 
-ISC
+Licença: ISC
